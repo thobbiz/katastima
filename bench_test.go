@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/thobbiz/thobbixDB/store"
+	"github.com/thobbiz/katastima/store"
 )
 
 func openTestStore(b *testing.B) *store.KVStore {

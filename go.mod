@@ -1,3 +1,3 @@
-module github.com/thobbiz/thobbixDB
+module github.com/thobbiz/katastima
 
 go 1.25.5

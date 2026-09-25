@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/thobbiz/thobbixDB/internal/fileutil"
+	"github.com/thobbiz/katastima/internal/fileutil"
 )
 
 type DataSegments struct {

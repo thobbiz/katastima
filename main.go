@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/thobbiz/thobbixDB/store"
+	"github.com/thobbiz/katastima/store"
 )
 
 func main() {

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/thobbiz/thobbixDB/internal/fileutil"
+	"github.com/thobbiz/katastima/internal/fileutil"
 )
 
 const (
