@@ -1,5 +1,5 @@
-# thobbiz-kv
-thobbiz-kv is an append-only, persistent key-value store written in Go, modelled after the [Bitcask](https://riak.com/assets/bitcask-a-log-structured-hash-table-for-fast-key-value-data.pdf) storage model. All writes go to an active log segment, with an in-memory hash index mapping each key to its byte offset on disk. Reads are a single disk seek. I built it as a deep dive into storage engine internals and systems-level Go.
+# katastima
+katastima is an append-only, persistent key-value store written in Go, modelled after the [Bitcask](https://riak.com/assets/bitcask-a-log-structured-hash-table-for-fast-key-value-data.pdf) storage model. All writes go to an active log segment, with an in-memory hash index mapping each key to its byte offset on disk. Reads are a single disk seek. I built it as a deep dive into storage engine internals and systems-level Go.
 
 ## How It Works
 - **Writes** are appended to the active data segment as fixed-format binary records.
@@ -32,7 +32,7 @@ Each record written to disk has a 21-byte header followed by the key and value b
 
 ## Project Structure
 ```
-thobbizKV/
+katastima/
 ├── store/
 │   ├── store.go       # KVStore struct, Open, Close, NewStore
 │   ├── index.go       # KeyTable and BuildIndex
@@ -54,18 +54,18 @@ thobbizKV/
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/thobbiz/thobbizKV.git
-   cd thobbizKV
+   git clone https://github.com/thobbiz/katastima.git
+   cd katastima
    ```
 
 2. Build the project:
    ```bash
-   go build -o thobbizKV
+   go build -o katastima
    ```
 
 3. Run the example:
    ```bash
-   ./thobbizKV
+   ./katastima
    ```
 
 ### Usage
